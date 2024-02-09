@@ -34,4 +34,26 @@ $$
 mAP = \frac{\sum_{i=1}^K{AP_i}}{K},
 $$
 
-where $K$ denotes the number of total query.
+where $K$ denotes the number of total queries.
+
+## Google Landmark v2 (GLDv2)
+Link to [GLDv2](https://www.kaggle.com/competitions/landmark-retrieval-2020). Submit to kaggle for evaluation.
+
+$$
+mAP@100 = \frac{1}{Q}\sum_{q=1}^Q{\frac{1}{min(m_q, 100)}}\sum_{k=1}^{min(n_q, 100)}{P_q(k)rel_q(k)},
+$$
+
+where:
+
+- $Q$ is the number of query images
+- $m_q$ is the number of *index* images containing a landmark **in common with** the query image $q$ (note that $m_q > 0$)
+- $n_q$ is the number of *predictions* made by the system for query $q$
+- $P_q(k)$ is the precision at rank $k$ for the $q$-th query
+- $rel_q(k)$ denotes the relevance of prediciton $k$ for the $q$-th query: it’s 1 if the $k$-th prediction is correct, and 0 otherwise.
+
+## Stanford Online Product (SOP)
+Link to [SOP]()
+
+Same with CUB, Car, INaturalist
+
+TODO
