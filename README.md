@@ -28,7 +28,7 @@ $$
 AP_i = \sum_{k=1}^N{\frac{\frac{k}{ranks[k]}+\frac{k+1}{ranks[k] + 1}}{nres \times 2}},
 $$
 
-where $N$ denotes the number of positive samples. Note that if $ranks[k] = 0$, $ AP_k = 1+1/nres * 2$ .
+where $N$ denotes the number of positive samples. Note that if $ranks[k] = 0$, $AP_k = 1+1/nres * 2$ .
 
 $$
 mAP = \frac{\sum_{i=1}^K{AP_i}}{K},
