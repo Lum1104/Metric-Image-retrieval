@@ -54,6 +54,8 @@ where:
 ## Stanford Online Product (SOP)
 Link to [SOP]()
 
-Same with CUB, Car, INaturalist
+Same with CUB, Car, INaturalist:
 
-TODO
+$$
+\text{Recall@1} = \frac{\text{Number of relevant items retrieved at rank 1}}{\text{Total number of relevant items}}
+$$
